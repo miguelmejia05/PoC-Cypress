@@ -4,7 +4,7 @@
   "description": "Cypress PoC",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open",
+    "test": "cypress run --headless --browser chrome",
     "test:open": "cypress open"
   },
   "repository": {

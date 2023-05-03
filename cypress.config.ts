@@ -1,9 +1,17 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from 'cypress'
 
-module.exports = defineConfig({
+export default defineConfig({
+  video: false,
+  screenshotOnRunFailure: false,
+  chromeWebSecurity: false,
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    baseUrl: 'https://www.latlong.net/'
+  },
+  setupNodeEvents(on, config) {
+    // implement node event listeners here
+    config.defaultCommandTimeout= 10000;
+    config.responseTimeout= 20000;
+    config.pageLoadTimeout= 60000;
+    return config;
   },
 });
