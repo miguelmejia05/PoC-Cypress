@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/miguelmejia05/PoC-Cypress#readme",
   "devDependencies": {
-    "cypress": "^12.11.0"
+    "cypress": "^12.11.0",
+    "typescript": "^5.0.4"
   }
 }
