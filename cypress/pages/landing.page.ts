@@ -23,8 +23,14 @@ class LandingPage {
   }
 
   public getCoordinates(placeName: string): void {
+    cy.wait(this.placeNameTextBox).should('be.visible');
     cy.get(this.placeNameTextBox).type(placeName);
     cy.get(this.findButton).click();
+  }
+
+  public checkCoordinates(latitude: string, longitude : string): void {
+    cy.get(this.latitudeTextBox).should('have.value', latitude);
+    cy.get(this.longitudeTextBox).should('have.value', longitude);
   }
 }
 
