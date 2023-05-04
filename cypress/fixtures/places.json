@@ -1,6 +1,24 @@
 {
-  "placeName1": "Medellin",
-  "placeName2": "Itagui",
-  "placeName3": "Envigado",
-  "placeName4": "Sabaneta"
+  "cities": [
+    {
+      "placeName": "Medellin",
+      "latitude": "6.230833",
+      "longitude": "-75.590553"
+    },
+    {
+      "placeName": "Madrid",
+      "latitude": "40.416775",
+      "longitude": "-3.703790"
+    },
+    {
+      "placeName": "New York",
+      "latitude": "40.730610",
+      "longitude": "-73.935242"
+    },
+    {
+      "placeName": "Tokyo",
+      "latitude": "35.652832",
+      "longitude": "139.839478"
+    }
+  ]
 }
