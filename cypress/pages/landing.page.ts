@@ -23,7 +23,6 @@ class LandingPage {
   }
 
   public getCoordinates(placeName: string): void {
-    cy.get(this.placeNameTextBox).should('be.visible');
     cy.get(this.placeNameTextBox).type(placeName);
     cy.get(this.findButton).click();
   }
